@@ -17,10 +17,10 @@
       <nav class="navbar">
         <div class="name">Rutval</div>
         <div class="navbarLinks">
-          <a href="#home" class="active">Home</a>
-          <a href="#about" class="">Education</a>
-          <a href="#services">Skills</a>
-          <a href="#portfolio">Projects</a>
+          <a href=".MySelf" class="active">Home</a>
+          <a href=".AboutMe" class="">Education</a>
+          <a href=".MySkills">Skills</a>
+          <a href=".Projects">Projects</a>
         </div>
       </nav>
       <div class="MySelf">
@@ -214,6 +214,18 @@
       </div>
     </div>
     <script>
+      var links = document.querySelectorAll("nav a");
+
+      links.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          var target = document.querySelector(this.getAttribute("href"));
+          target.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
       // Get the button
       let mybutton = document.getElementById("myBtn");
 
