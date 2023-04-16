@@ -1,0 +1,15 @@
+.MySelf {
+  flex-direction: column;
+}
+.MySkills .CardsInSkills {
+  display: flex;
+  flex-direction: column;
+}
+.Projects {
+  display: flex;
+  flex-direction: column;
+}
+.Projects .CardsInProjects {
+  display: flex;
+  flex-direction: column;
+}

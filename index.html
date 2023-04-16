@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:875px)"
+      href="PhoneCSS.css"
+    />
     <title>PortFolio</title>
   </head>
   <body>
@@ -16,8 +21,6 @@
           <a href="#about" class="">Education</a>
           <a href="#services">Skills</a>
           <a href="#portfolio">Projects</a>
-          <a href="#testimonial">Experiance</a>
-          <a href="#contact">Contact</a>
         </div>
       </nav>
       <div class="MySelf">
@@ -202,8 +205,39 @@
           </div>
         </div>
       </div>
-      <div class="Experiance"></div>
-      <div class="copyright"></div>
+
+      <div class="copyright">
+        <div class="para">Copyright © 2023 by Rutval B. Thonge</div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          Top
+        </button>
+      </div>
     </div>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>
