@@ -1,0 +1,215 @@
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  /* --main-color: #0ef; */
+  --main-color: #754ef9;
+}
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+/*NavBar and Myself CSS*/
+.AllSections {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  position: sticky;
+}
+.navbar .navbarLinks {
+  margin: 15px auto;
+}
+
+.navbar .navbarLinks a {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  margin-left: 1rem;
+  transition: 0.3s;
+}
+.navbar .navbarLinks a:hover,
+.navbar .navbarLinks a.active {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+.MySelf {
+  display: flex;
+  flex-direction: row;
+
+  margin: 145px 145px;
+}
+.info h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.info h1 {
+  font-size: 3.3rem;
+  color: var(--main-color);
+  margin-bottom: 4rem;
+}
+.info p {
+  font-size: 1.7rem;
+  margin: 2rem 0 3rem;
+}
+.MySelf .MyIntro .links ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.MySelf .MyIntro .links ul li {
+  margin: 5px 0px;
+  padding: 5px 15px;
+}
+.MySelf .MyIntro .links img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+}
+.MySelf .MyIntro .links a :hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+.MySelf .MyImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MySelf .MyImage img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+.MySelf .MyImage img {
+  border: 2px solid var(--main-color);
+  max-height: 40rem;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*About Me CSS*/
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second-bg-color);
+}
+.AboutMe .headdingInAboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 145px;
+}
+.AboutMe .headdingInAboutMe .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.AboutMe .headdingInAboutMe .heading .me {
+  color: var(--main-color);
+}
+.AboutMe .headdingInAboutMe h1 {
+  font-size: 3.3rem;
+}
+.AboutMe .headdingInAboutMe h2 {
+  font-size: 1.7rem;
+}
+.AboutMe .headdingInAboutMe P {
+  font-size: 0.9rem;
+  text-align: center;
+}
+.AboutMe .cardsInaboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AboutMe .cardsInaboutMe p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.AboutMe .cardsInaboutMe h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: antiquewhite;
+}
+.AboutMe .cardsInaboutMe .card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  border: 2px solid black;
+  width: 35rem;
+
+  background-color: var(--bg-color);
+  margin: 15px auto;
+  border-radius: 15px;
+}
+.AboutMe .cardsInaboutMe .card1:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.05);
+  transition: all ease-in-out 1s;
+}
+
+.AboutMe .cardsInaboutMe .card2 {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  width: 35rem;
+  background-color: var(--bg-color);
+  margin: 15px auto;
+  border-radius: 15px;
+}
+.AboutMe .cardsInaboutMe .card2:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.05);
+  transition: all ease-in-out 1s;
+}
+
+.AboutMe .cardsInaboutMe .card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  border: 2px solid black;
+  width: 35rem;
+  background-color: var(--bg-color);
+  margin: 15px auto;
+  border-radius: 15px;
+}
+.AboutMe .cardsInaboutMe .card3:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.05);
+  transition: all ease-in-out 1s;
+}
