@@ -30,6 +30,8 @@ html {
   position: sticky;
 }
 .navbar .navbarLinks {
+  display: flex;
+  flex-direction: row;
   margin: 15px auto;
 }
 
@@ -50,18 +52,34 @@ html {
 
   margin: 145px 145px;
 }
+.MySelf .MyIntro {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.MySelf .MyIntro .MyPara {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+.MySelf .MyIntro .MyPara p {
+  text-align: center;
+}
 .info h2 {
   font-size: 2rem;
   line-height: 1.2;
+  text-align: center;
 }
 .info h1 {
   font-size: 3.3rem;
   color: var(--main-color);
   margin-bottom: 4rem;
+  text-align: center;
 }
 .info p {
   font-size: 1.7rem;
   margin: 2rem 0 3rem;
+  text-align: center;
 }
 .MySelf .MyIntro .links ul {
   display: flex;
@@ -122,6 +140,9 @@ html {
   justify-content: center;
   align-items: center;
   margin: 25px 145px;
+  width: auto;
+  height: auto;
+  max-height: 35rem;
 }
 .AboutMe .headdingInAboutMe .heading {
   display: flex;
@@ -134,9 +155,11 @@ html {
 }
 .AboutMe .headdingInAboutMe h1 {
   font-size: 3.3rem;
+  text-align: center;
 }
 .AboutMe .headdingInAboutMe h2 {
   font-size: 1.7rem;
+  text-align: center;
 }
 .AboutMe .headdingInAboutMe P {
   font-size: 0.9rem;

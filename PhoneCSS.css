@@ -1,3 +1,6 @@
+.navbar .navbarLinks {
+  flex-direction: column;
+}
 .MySelf {
   flex-direction: column;
 }
@@ -8,11 +11,27 @@
   justify-content: center;
   align-items: center;
 }
+.MySelf .MyIntro .MyPara {
+  font-size: 1.1rem;
+}
+.MySelf .MyIntro {
+}
 .MySkills .CardsInSkills {
   display: flex;
   flex-direction: column;
 }
-
+.AboutMe .headdingInAboutMe h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.AboutMe .headdingInAboutMe h2 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.AboutMe .headdingInAboutMe P {
+  font-size: 0.7rem;
+  text-align: center;
+}
 .Projects {
   display: flex;
   flex-direction: column;
@@ -22,14 +41,14 @@
   flex-direction: column;
 }
 .AboutMe .cardsInaboutMe .card1 {
-  max-width: 21rem;
+  max-width: 15rem;
 }
 .AboutMe .cardsInaboutMe .card2 {
-  max-width: 21rem;
+  max-width: 15rem;
 }
 
 .AboutMe .cardsInaboutMe .card3 {
-  max-width: 21rem;
+  max-width: 15rem;
 }
 .Projects .CardsInProjects .ProjectCard1 {
   max-width: 45rem;
