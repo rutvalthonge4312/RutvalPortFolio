@@ -1,10 +1,18 @@
 .MySelf {
   flex-direction: column;
 }
+.MySelf .MyIntro .links ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
 .MySkills .CardsInSkills {
   display: flex;
   flex-direction: column;
 }
+
 .Projects {
   display: flex;
   flex-direction: column;
@@ -12,4 +20,18 @@
 .Projects .CardsInProjects {
   display: flex;
   flex-direction: column;
+}
+.AboutMe .cardsInaboutMe .card1 {
+  max-width: 21rem;
+}
+.AboutMe .cardsInaboutMe .card2 {
+  max-width: 21rem;
+}
+
+.AboutMe .cardsInaboutMe .card3 {
+  max-width: 21rem;
+}
+.Projects .CardsInProjects .ProjectCard1 {
+  max-width: 45rem;
+  width: 17rem;
 }
