@@ -201,8 +201,8 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 15rem;
   border: 2px solid black;
+  height: 15rem;
   width: 35rem;
   background-color: var(--bg-color);
   margin: 15px auto;
@@ -212,4 +212,181 @@ html {
   border: 2px solid var(--main-color);
   transform: scale(1.05);
   transition: all ease-in-out 1s;
+}
+.MySkills {
+  display: flex;
+  flex-direction: column;
+
+  margin: 25px 145px;
+}
+.MySkills h1 {
+  font-size: 3.3rem;
+}
+.MySkills .CardsInSkills {
+  display: flex;
+  flex-direction: row;
+}
+.MySkills .CardsInSkills h3 {
+  color: var(--main-color);
+  font-size: 1.7rem;
+  text-align: center;
+}
+.MySkills .CardsInSkills img {
+  height: 80px;
+  width: 80px;
+  filter: invert(80%);
+}
+.MySkills .CardsInSkills .SkillCard1 {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 10px;
+  border-radius: 25px;
+  height: 20rem;
+  width: 35rem;
+  text-align: center;
+  background-color: var(--second-bg-color);
+}
+
+.MySkills .CardsInSkills .SkillCard2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 10px;
+  border-radius: 25px;
+  height: 20rem;
+  width: 35rem;
+  text-align: center;
+  padding: 15px 15px;
+  background-color: var(--second-bg-color);
+}
+
+.MySkills .CardsInSkills .SkillCard3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 10px;
+  border-radius: 25px;
+  padding: 15px 15px;
+  height: 20rem;
+  width: 35rem;
+  text-align: center;
+  background-color: var(--second-bg-color);
+}
+/*Hover Of Skill Card*/
+.MySkills .CardsInSkills .SkillCard1:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.005);
+  transition: all ease-in-out 0.5s;
+}
+.MySkills .CardsInSkills .SkillCard2:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.005);
+  transition: all ease-in-out 0.5s;
+}
+.MySkills .CardsInSkills .SkillCard3:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.005);
+  transition: all ease-in-out 0.5s;
+}
+/*Projects CSS*/
+.Projects {
+  display: flex;
+  flex-direction: column;
+
+  margin: 95px 145px;
+}
+.Projects h1 {
+  font-size: 3.3rem;
+}
+.Projects h3 {
+  font-size: 1.9rem;
+  color: var(--main-color);
+}
+.Projects .CardsInProjects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Projects .CardsInProjects img {
+  margin: 15px auto;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  filter: invert(80%);
+}
+.Projects .CardsInProjects a:hover {
+  color: var(--main-color);
+  transition: 0.3s;
+  scale: 1.1;
+}
+.Projects .CardsInProjects .ProjectCard1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  border-radius: 25px;
+  margin: 15px 15px;
+  background-image: url("Images/GYM\ Backgound.jpg");
+  background-repeat: no-repeat;
+  background-size: 35rem 25rem;
+  height: 20rem;
+  width: 35rem;
+}
+.Projects .CardsInProjects .ProjectCard2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  border-radius: 25px;
+  margin: 15px 15px;
+  background-image: url("Images/BI.jpg");
+  background-repeat: no-repeat;
+  background-size: 35rem 25rem;
+  height: 20rem;
+  width: 35rem;
+}
+.Projects .CardsInProjects .ProjectCard3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  z-index: 0;
+  border-radius: 25px;
+  margin: 15px 15px;
+  background-image: url("Images/nuts-gae0c0b42f_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: 35rem 25rem;
+  height: 20rem;
+  width: 35rem;
+}
+.Projects .CardsInProjects .ProjectCard1:hover {
+  border: 2px solid var(--main-color);
+  transform: translateY(-15px);
+  transition: all ease-in-out 0.5s;
+}
+
+.Projects .CardsInProjects .ProjectCard2:hover {
+  border: 2px solid var(--main-color);
+  transform: translateY(-15px);
+  transition: all ease-in-out 0.5s;
+}
+.Projects .CardsInProjects .ProjectCard3:hover {
+  border: 2px solid var(--main-color);
+  transform: translateY(-15px);
+  transition: all ease-in-out 0.5s;
 }
