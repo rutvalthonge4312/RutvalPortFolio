@@ -5,7 +5,12 @@
   flex-direction: column;
   margin: 145px 13px;
 }
-
+.AboutMe .headdingInAboutMe {
+  margin: 25px 13px;
+  width: auto;
+  height: auto;
+  max-height: 35rem;
+}
 .MySelf .MyIntro .links ul {
   display: flex;
   flex-direction: row;
@@ -21,6 +26,9 @@
 .MySelf .MyIntro .MyPara p {
   text-align: center;
   font-size: 0.9rem;
+}
+.MySkills {
+  margin: 25px 13px;
 }
 .MySkills .CardsInSkills {
   display: flex;
@@ -55,6 +63,7 @@
   font-size: 1.3rem;
   text-align: center;
 }
+
 .AboutMe .headdingInAboutMe P {
   font-size: 0.7rem;
   text-align: center;
@@ -72,14 +81,17 @@
   font-size: 0.7rem;
 }
 .AboutMe .cardsInaboutMe .card1 {
-  max-width: 15rem;
+  max-width: 21rem;
 }
 .AboutMe .cardsInaboutMe .card2 {
-  max-width: 15rem;
+  max-width: 21rem;
 }
-
+/*
+max-width: 45rem;
+ 
+  font-size: 0.7rem;*/
 .AboutMe .cardsInaboutMe .card3 {
-  max-width: 15rem;
+  max-width: 21rem;
 }
 .Projects .CardsInProjects .ProjectCard1 {
   max-width: 45rem;
