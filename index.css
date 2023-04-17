@@ -32,6 +32,7 @@ html {
 .navbar .navbarLinks {
   display: flex;
   flex-direction: row;
+
   margin: 15px auto;
 }
 
@@ -52,15 +53,40 @@ html {
 
   margin: 145px 145px;
 }
+
 .MySelf .MyIntro {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: auto;
+}
+.MySelf .MyIntro .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .MySelf .MyIntro .MyPara {
   display: flex;
-  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   height: auto;
+  width: auto;
+  max-height: 15rem;
+  max-width: 55rem;
+
+  min-width: 20rem;
+  min-height: 10rem;
+}
+.MySelf .MyIntro .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
 }
 .MySelf .MyIntro .MyPara p {
   text-align: center;
@@ -69,16 +95,17 @@ html {
   font-size: 2rem;
   line-height: 1.2;
   text-align: center;
+  margin: 0 0;
 }
 .info h1 {
   font-size: 3.3rem;
   color: var(--main-color);
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 .info p {
-  font-size: 1.7rem;
-  margin: 2rem 0 3rem;
+  font-size: 2rem;
+  margin: 0 0;
   text-align: center;
 }
 .MySelf .MyIntro .links ul {
@@ -462,4 +489,24 @@ html {
 .copyright {
   font-size: 1rem;
   margin: 5px 5px;
+}
+
+/*Animations while go to that section*/
+
+.MySelf,
+.AboutMe {
+  opacity: 0;
+
+  animation: slide-in 2s ease-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-1.3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
 }
