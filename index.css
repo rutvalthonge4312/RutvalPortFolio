@@ -27,7 +27,6 @@ html {
   display: flex;
   flex-direction: row;
   margin-top: 15px;
-  position: sticky;
 }
 .navbar .navbarLinks {
   display: flex;
@@ -485,6 +484,7 @@ html {
 #myBtn:hover {
   background-color: var(--bg-color);
   color: var(--main-color);
+  transform: scale(1.2);
 }
 .copyright {
   font-size: 1rem;
