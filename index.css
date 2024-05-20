@@ -342,17 +342,14 @@ html {
 /*Hover Of Skill Card*/
 .MySkills .CardsInSkills .SkillCard1:hover {
   border: 2px solid var(--main-color);
-  transform: scale(1.005);
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 1s;
 }
 .MySkills .CardsInSkills .SkillCard2:hover {
   border: 2px solid var(--main-color);
-  transform: scale(1.005);
   transition: all ease-in-out 0.5s;
 }
 .MySkills .CardsInSkills .SkillCard3:hover {
   border: 2px solid var(--main-color);
-  transform: scale(1.005);
   transition: all ease-in-out 0.5s;
 }
 /*Projects CSS*/
@@ -382,12 +379,10 @@ html {
   margin-top: 15px;
   margin-bottom: 0px;
   text-align: center;
-  height: 60px;
-  width: 60px;
-  filter: invert(80%);
+
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .Projects .CardsInProjects a:hover {
   color: var(--main-color);
@@ -412,24 +407,16 @@ html {
   max-height: 45rem;
   background-size: auto auto;
 }
-.Projects .CardsInProjects .ProjectCard2 {
+.Projects .CardsInProjects .ProjectCard2 , .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  text-align: center;
-
+  color: white !important;
+  background-color: #333333 !important;
   border-radius: 25px;
   margin: 15px 15px;
-  background-image: url("Images/BI.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: auto;
-  width: auto;
-  max-width: 35rem;
-  max-height: 45rem;
-  background-size: auto auto;
+  
 }
 .Projects .CardsInProjects .ProjectCard3 {
   display: flex;
@@ -449,13 +436,17 @@ html {
   max-height: 45rem;
   background-size: auto auto;
 }
+button a{
+  color: whitesmoke;
+  text-decoration: none;
+}
 .Projects .CardsInProjects .ProjectCard1:hover {
   border: 2px solid var(--main-color);
   transform: translateY(-15px);
   transition: all ease-in-out 0.5s;
 }
 
-.Projects .CardsInProjects .ProjectCard2:hover {
+.Projects .CardsInProjects .ProjectCard2:hover , .card:hover {
   border: 2px solid var(--main-color);
   transform: translateY(-15px);
   transition: all ease-in-out 0.5s;
